@@ -1,0 +1,15 @@
+{
+
+  "channels_001": {
+    "url" :"http://ttapi.research.itcast.cn/app/v1_0/user/channels",
+    "headers":{"Content-Type":"application/json","Authorization":"Bearer token信息"},
+    "expect": "OK",
+    "status_code": 201
+  },
+  "channels_002": {
+    "url" :"http://ttapi.research.itcast.cn/app/v1_0/user/channels",
+    "headers":{"Content-Type":"application/json","Authorization":"Bearer token信息"},
+    "expect": {"mobile":"1324970404789 is not a valid mobile"},
+    "status_code": 400
+  }
+}
